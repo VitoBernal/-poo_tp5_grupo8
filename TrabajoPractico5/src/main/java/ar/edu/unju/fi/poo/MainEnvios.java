@@ -53,11 +53,13 @@ public class MainEnvios {
         System.out.print("envio 3: ");
         manager.asignarRuta(envio3, ruta2);
 
-        System.out.println("envio 1 " + envio1 + "\n");
-        System.out.println("envio 2 " + envio2 + "\n");
-        System.out.println("envio 3 " + envio3 + "\n");
+        System.out.println("Envios:");
+        envio1.mostrarInfo();
+        envio2.mostrarInfo();
+        envio3.mostrarInfo();
 
+        System.out.println("Devolucion de envio 1: ");
         envio1.devolver();
-        System.out.println("envio 1 " + envio1);
+        envio1.mostrarInfo();
     }
 }

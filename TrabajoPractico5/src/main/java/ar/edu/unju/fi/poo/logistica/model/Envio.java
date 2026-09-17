@@ -102,7 +102,10 @@ public class Envio {
     @Override
     public String toString() {
         return "Envio [id=" + id + ", remitente=" + remitente + ", destinatario=" + destinatario + ", direccionEntrega="
-                + direccionEntrega + ", estado=" + estado + "\nPAQUETES:" + paquetes + "]";
+                + direccionEntrega + ", estado=" + estado + "\nPAQUETES:" + paquetes + "]\n";
     }
 
+    public void mostrarInfo() {
+        System.out.print(this.toString());
+    }
 }
