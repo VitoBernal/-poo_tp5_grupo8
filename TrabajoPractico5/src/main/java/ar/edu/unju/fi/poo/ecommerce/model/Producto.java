@@ -8,13 +8,13 @@ public class Producto {
 	private double precio;
 	private boolean activo;
 
-	public Producto(String codigo, String nombre, double precio, boolean activo) {
+	public Producto(String codigo, String nombre, double precio) {
 		this.codigo = Objects.requireNonNull(codigo, "codigo requerido");
 		this.nombre = Objects.requireNonNull(nombre, "nombre requerido");
 		if (precio < 0)
 			throw new IllegalArgumentException("precio no puede ser negativo");
 		this.precio = precio;
-		this.activo = activo;
+		this.activo = true;
 	}
 
 	public String getCodigo() {
